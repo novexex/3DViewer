@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>204</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_Rotation">
+   <property name="geometry">
+    <rect>
+     <x>418</x>
+     <y>61</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Rotation</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rotate_yAxis">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>116</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Y-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_moveOnMinus_background">
+   <property name="geometry">
+    <rect>
+     <x>603</x>
+     <y>56</y>
+     <width>81</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+
+background-color: rgb(240, 238, 242);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_plus_yAxis">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>116</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Y-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_makeScreenshot">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>69</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_makeScreenshot {
+    background-color: white;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: gray;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton#pushButton_makeScreenshot:pressed {
+    background-color: rgb(226, 224, 228);
+    border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>Make screenshot</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_minus_xAxis">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>82</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>X-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ControlPanel">
+   <property name="geometry">
+    <rect>
+     <x>509</x>
+     <y>19</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>21</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>Control panel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_IndexesCount">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>49</y>
+     <width>361</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Count of indexes:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Zoom">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>61</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Zoom</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_controlPanel_background">
+   <property name="geometry">
+    <rect>
+     <x>386</x>
+     <y>17</y>
+     <width>414</width>
+     <height>175</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+
+
+background-color: rgb(214, 212, 216);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_zoomIn">
+   <property name="geometry">
+    <rect>
+     <x>708</x>
+     <y>95</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MoveOnMinus">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>61</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Move on -</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_plus_xAxis">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>82</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>X-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_zoomBackground">
+   <property name="geometry">
+    <rect>
+     <x>702</x>
+     <y>56</y>
+     <width>81</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+
+background-color: rgb(240, 238, 242);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_moveOnPlus_background">
+   <property name="geometry">
+    <rect>
+     <x>503</x>
+     <y>56</y>
+     <width>81</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+background-color: rgb(240, 238, 242);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_VertexesCount">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>361</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Count of vertexes:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MoveOnPlus">
+   <property name="geometry">
+    <rect>
+     <x>511</x>
+     <y>61</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Move on +</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_minus_zAxis">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>150</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Z-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FileName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>11</y>
+     <width>361</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>File's name:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_minus_yAxis">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>116</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Y-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rotate_zAxis">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>150</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Z-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rotate_xAxis">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>82</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>X-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_zoomOut">
+   <property name="geometry">
+    <rect>
+     <x>708</x>
+     <y>130</y>
+     <width>69</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_plus_zAxis">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>150</y>
+     <width>68</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string>Z-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_rotationBackground">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>56</y>
+     <width>81</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;
+
+
+background-color: rgb(206, 204, 208);
+background-color: rgb(240, 238, 242);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_stopScreencast">
+   <property name="geometry">
+    <rect>
+     <x>196</x>
+     <y>133</y>
+     <width>184</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_stopScreencast {
+    background-color: white;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: gray;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton#pushButton_stopScreencast:pressed {
+    background-color: rgb(226, 224, 228);
+    border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>Stop screencast</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_startScreencast">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>133</y>
+     <width>184</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFontMonospaced</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_startScreencast {
+    background-color: white;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: gray;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton#pushButton_startScreencast:pressed {
+    background-color: rgb(226, 224, 228);
+    border-style: inset;
+}</string>
+   </property>
+   <property name="text">
+    <string>Start screencast</string>
+   </property>
+  </widget>
+  <zorder>label_controlPanel_background</zorder>
+  <zorder>label_rotationBackground</zorder>
+  <zorder>label_moveOnPlus_background</zorder>
+  <zorder>label_zoomBackground</zorder>
+  <zorder>label_Rotation</zorder>
+  <zorder>pushButton_rotate_yAxis</zorder>
+  <zorder>label_moveOnMinus_background</zorder>
+  <zorder>pushButton_plus_yAxis</zorder>
+  <zorder>pushButton_makeScreenshot</zorder>
+  <zorder>pushButton_minus_xAxis</zorder>
+  <zorder>label_ControlPanel</zorder>
+  <zorder>label_IndexesCount</zorder>
+  <zorder>label_Zoom</zorder>
+  <zorder>pushButton_zoomIn</zorder>
+  <zorder>label_MoveOnMinus</zorder>
+  <zorder>pushButton_plus_xAxis</zorder>
+  <zorder>label_VertexesCount</zorder>
+  <zorder>label_MoveOnPlus</zorder>
+  <zorder>pushButton_minus_zAxis</zorder>
+  <zorder>label_FileName</zorder>
+  <zorder>pushButton_minus_yAxis</zorder>
+  <zorder>pushButton_rotate_zAxis</zorder>
+  <zorder>pushButton_rotate_xAxis</zorder>
+  <zorder>pushButton_zoomOut</zorder>
+  <zorder>pushButton_plus_zAxis</zorder>
+  <zorder>pushButton_stopScreencast</zorder>
+  <zorder>pushButton_startScreencast</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

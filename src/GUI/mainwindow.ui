@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit_backgroundColor3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>613</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_lineType">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>295</y>
+      <width>161</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Solid lines</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dashed lines</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_backgroundColor">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>619</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Background color rgb(0-1):</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lineColor">
+    <property name="geometry">
+     <rect>
+      <x>121</x>
+      <y>339</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line color:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lineWidth">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>252</y>
+      <width>149</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_vertexMapping">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>476</y>
+      <width>161</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Circle</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Square</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_tipAboutColorReferences">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>647</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>(color references you can find at src/colors.pdf)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Done">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>703</y>
+      <width>184</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_Done {
+    background-color: white;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: gray;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton#pushButton_Done:pressed {
+    background-color: rgb(226, 224, 228);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Done</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vertexMapping">
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>482</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vertex mapping:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lineSettings">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>219</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Line settings:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vertexSize">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>440</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vertex size:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lineType">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>301</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line type:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_backgroundColor1">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>613</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_vertexSize">
+    <property name="geometry">
+     <rect>
+      <x>206</x>
+      <y>433</y>
+      <width>149</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_backgroundColor2">
+    <property name="geometry">
+     <rect>
+      <x>256</x>
+      <y>613</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_lineColor">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>333</y>
+      <width>161</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Black</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>White</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_projection">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>157</y>
+      <width>161</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Central projection</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Parallel projection</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_projectionType">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>163</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Projection type:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vertexColor">
+    <property name="geometry">
+     <rect>
+      <x>104</x>
+      <y>518</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vertex color:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vertexesSettings">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>399</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vertexes settings:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_vertexColor">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>513</y>
+      <width>161</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Black</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>White</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_backgroundSettings">
+    <property name="geometry">
+     <rect>
+      <x>157</x>
+      <y>574</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Background settings:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lineWidth">
+    <property name="geometry">
+     <rect>
+      <x>117</x>
+      <y>260</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line width:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_projectionSettings">
+    <property name="geometry">
+     <rect>
+      <x>171</x>
+      <y>126</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Projection settings:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_FilePath">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>60</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tipAboutAbsolutePath">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>91</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>(enter an absolute path)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_PathToFile">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Path to file:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

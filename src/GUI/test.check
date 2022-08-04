@@ -1,0 +1,101 @@
+#include "viewer.h"
+#include <check.h>
+
+static data_t obj = {0};
+FILE *one;
+
+#test fill_verts
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+ck_assert_double_eq_tol(obj.dst[0], 0.5464, 1e-4);
+ck_assert_double_eq_tol(obj.dst[3], 0.6207, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+
+#test move_by_y
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+move_y(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[1], -20.9516, 1e-4);
+ck_assert_double_eq_tol(obj.dst[4], -20.7610, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+
+#test move_by_x
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+move_x(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[0], 1.5464, 1e-4);
+ck_assert_double_eq_tol(obj.dst[3], 1.6207, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+#test move_by_z
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+move_z(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[2], 32.4643, 1e-4);
+ck_assert_double_eq_tol(obj.dst[5], 32.5371, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+#test rot_by_x
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+rotation_by_ox(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[1], -38.3368, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+#test rot_by_y
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+rotation_by_oy(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[1], -21.9516, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+
+#test rot_by_z
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+rotation_by_oz(&obj, 1);
+ck_assert_double_eq_tol(obj.dst[2], 31.4643, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
+
+#test zoom1
+one = fopen("obj/test.obj", "r");
+count_of_vertexes(one, &obj);
+rewind(one);
+fill_matrix(&obj, one);
+zoom(&obj, 2);
+ck_assert_double_eq_tol(obj.dst[5], 31.5371 * 2, 1e-4);
+free(obj.dst);
+free(obj.polyg);
+fclose(one);
+
